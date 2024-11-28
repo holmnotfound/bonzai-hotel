@@ -5,28 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/409e1a4887.js" crossorigin="anonymous"></script>
     <title>Bonzai.ai</title>
 </head>
 <body>
-      <header>
-            <nav>
-                <ul>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">BOOK A ROOM</a></li>
-                    <li><a href="#"><img src="/images/logowhite.png" alt="bonzai logo in white"></a></li>
-                    <li><a href="#">GALLERY</a></li>
-                    <li><a href="#">EXPERIENCE</a></li>
+      <header class="header">
+            <nav class="header__nav">
+                <ul class="header__nav-menu">
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">ABOUT</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">BOOK A ROOM</a>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link"><img class="header__nav-icon" src="/images/logowhite.png" alt="bonzai logo in white"></a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">GALLERY</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">EXPERIENCE</a></li>
                 </ul>
             </nav>
-            <video autoplay muted loop id="heroVideo">
-                <source src="/video/9166285-hd_1366_720_25fps.mp4" type="video/mp4">
+            <nav class="header__nav-mobil">
+                <ul class="header__nav-hamburger">
+                    <li class="header__nav-hamburger-item"><a href="#" class="header__nav-hamburger-link"><img class="header__nav-hamburger-icon" src="/images/logowhite.png" alt="bonz.ai logo"></a></li>
+                    <li class="header__nav-hamburger-item"><a href="#" class="header__nav-hamburger-link"><i class="fa-solid fa-bars"></i></a></li>
+                </ul>
+            </nav>
+            <video autoplay muted loop class="header__video">
+                <source class="header__video-spa" src="/video/9166285-hd_1366_720_25fps.mp4" type="video/mp4">
             </video>
+            <section class="header-inner">
+                <h1 class="header-inner__slogan">The future hotel, where innovation embraces sustainability.</h1>
+                <button class="button button--book-a-room" type="button">BOOK A ROOM</button>
+            </section>
         </header>
         <main>
-            <section class="hero">
-            <h1>The future hotel, where innovation embraces sustainability.</h1>
-            <button class="booking" type="button">BOOK A ROOM</button>
-        </section>
+            <section class="hotel-info">
+                <article class="hotel-info-wrapper">
+                    <h2  class="hotel-info__titel">Bonzai - Where Innovation Meets Sustainability</h2>
+                    <p class="hotel-info__decription">Our journey began with a vision: to revolutionize hospitality by combining advanced AI technology with sustainability. Founded by innovators passionate about the planet, our hotel was designed to minimize environmental impact while offering a seamless guest experience. From energy-efficient systems to AI-driven personalization, we’ve redefined what it means to travel responsibly. Today, we continue to lead the way in smart, sustainable hospitality.</p>
+                </article>
+            </section>
+            <section class="booking-form">
+                <section class="booking-form__field booking-form__field--date">
+                    <label class="booking-form__label" for="booking-dates">Dates</label>
+                    <input class="booking-form__input" type="date" id="booking-dates" name="dates">
+                </section>
+                <section class="booking-form__field booking-form__field--room-quantity">
+                    <label class="booking-form__label" for="quantity">Rooms</label>
+                    <input class="booking-form__input" type="number" id="quantity" name="quantity" min="1" max="10">
+                </section>
+                <section class="booking-form__field booking-form__field--people-quantity">
+                    <label class="booking-form__label" for="quantity-people">Adults</label>
+                    <input class="booking-form__input" type="number" id="quantity" name="quantity" min="1" max="10">
+                </section>
+            </section>
         </main>
     <footer>
     </footer>

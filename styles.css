@@ -10,9 +10,12 @@
     --darkgreen: #14343B;
 }
 
-/* Navbar design*/
+body{
+    min-height: 100vh;
+}
 
-nav{
+/*Navbar styling*/
+.header__nav-mobil{
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
@@ -22,51 +25,79 @@ nav{
     padding: 1.5rem;
 }
 
-nav ul{
+.header__nav{
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1.5rem;
+    display: none;
+}
+
+.header__nav-hamburger{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
-nav a, li{
+.header__nav-menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    visibility: hidden;
+}
+
+.header__nav-item, .header__nav-link, .header__nav-hamburger-item, .header__nav-hamburger-link{
     text-decoration: none;
     list-style: none;
     color: var(--wheat);
 }
 
-nav img{
+.header__nav-icon{
     height: 100%;
     width: 4.5rem;
 }
 
-/* Video Bakgrund*/
-video{
+.header__nav-hamburger-icon{
+    height: 100%;
+    width: 4rem;
+}
+
+.header__nav-hamburger-link{
+    font-size: 2rem;
+}
+
+/*Stylingen för videon i headern*/
+.header__video{
     position: absolute;
     top: 0;
     left: 0;
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
     z-index: -100;
 }
 
-/*content på hero*/
-.hero{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+/*Styling för både texten och knappen i hero*/
+.header-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-h1{
+.header-inner__slogan{
     color: var(--wheat);
-    font-size: 4rem;
+    font-size: 2.5rem;
     margin-top: 125px;
     margin-bottom: 50px;
-    width: 50%;
+    width: 70%;
     text-align: center;
 }
 
-.booking{
+.button{
     background-color: var(--wheat);
     color: var(--darkgreen);
     font-size: 1.2rem;
@@ -76,8 +107,116 @@ h1{
     border: none;
 }
 
-.booking:hover{
+.button:hover{
     color: var(--wheat);
     background-color: var(--darkgreen);
     cursor: pointer;
+}
+
+.hotel-info{
+    margin-top: 95px;
+    background-color: var(--wheat);
+    color: var(--darkgreen);
+}
+
+.hotel-info-wrapper{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hotel-info__titel{
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.hotel-info__decription{
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.booking-form{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+    grid-template-areas: 
+    ". date ."
+    ". room ."
+    ". people .";
+}
+
+.booking-form__field{
+    grid-area: date;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: var(--darkgreen);
+    border-style: solid;
+    border-width: 0 0 2px 0;
+}
+
+.booking-form__label{
+    font-weight: 600;
+    white-space: nowwrap;
+}
+
+.booking-form__input{
+    flex: 1;
+    max-width: 200px;
+    border: none;
+}
+
+.booking-form__field--room-quantity{
+    grid-area: room;
+}
+
+.booking-form__field--people-quantity{
+    grid-area: people;
+}
+
+@media screen and (min-width: 992px){
+
+    .header__nav-mobil{
+        display: none;
+    }
+
+    .header__nav{
+        display: block;
+    }
+
+    .header__nav-menu{
+        visibility: visible;
+    }
+
+    .header__nav-hamburger{
+        visibility: hidden;
+    }
+
+    .header__video{
+        height: auto;
+    }
+
+    .header-inner__slogan{
+        font-size: 4rem;
+    }
+
+    .hotel-info-wrapper{
+        padding-left: 20rem;
+        padding-right: 20rem;
+    }
+
+    .hotel-info__titel{
+        font-size: 1.9rem;
+    }
+
 }

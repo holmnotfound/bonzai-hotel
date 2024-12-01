@@ -1,31 +1,34 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Figtree", serif;
 }
 
-:root{
+:root {
     --wheat: #EAEAE3;
     --darkgreen: #14343B;
 }
 
-body{
+body {
     min-height: 100vh;
 }
 
 /*Navbar styling*/
-.header__nav-mobil{
+.header__nav-mobil {
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     font-size: 1.2rem;
     font-weight: 600;
-    padding: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
 }
 
-.header__nav{
+.header__nav {
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
@@ -36,41 +39,44 @@ body{
     display: none;
 }
 
-.header__nav-hamburger{
+.header__nav-hamburger {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header__nav-menu{
+.header__nav-menu {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     visibility: hidden;
 }
 
-.header__nav-item, .header__nav-link, .header__nav-hamburger-item, .header__nav-hamburger-link{
+.header__nav-item,
+.header__nav-link,
+.header__nav-hamburger-item,
+.header__nav-hamburger-link {
     text-decoration: none;
     list-style: none;
     color: var(--wheat);
 }
 
-.header__nav-icon{
+.header__nav-icon {
     height: 100%;
     width: 4.5rem;
 }
 
-.header__nav-hamburger-icon{
+.header__nav-hamburger-icon {
     height: 100%;
     width: 4rem;
 }
 
-.header__nav-hamburger-link{
+.header__nav-hamburger-link {
     font-size: 2rem;
 }
 
 /*Stylingen för videon i headern*/
-.header__video{
+.header__video {
     position: absolute;
     top: 0;
     left: 0;
@@ -81,14 +87,14 @@ body{
 }
 
 /*Styling för både texten och knappen i hero*/
-.header-inner{
+.header-inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.header-inner__slogan{
+.header-inner__slogan {
     color: var(--wheat);
     font-size: 2.5rem;
     margin-top: 125px;
@@ -97,7 +103,7 @@ body{
     text-align: center;
 }
 
-.button{
+.button {
     background-color: var(--wheat);
     color: var(--darkgreen);
     font-size: 1.2rem;
@@ -107,19 +113,21 @@ body{
     border: none;
 }
 
-.button:hover{
+.button:hover {
     color: var(--wheat);
     background-color: var(--darkgreen);
     cursor: pointer;
 }
 
-.hotel-info{
+/*Styiling för hotelinfo*/
+
+.hotel-info {
     margin-top: 95px;
     background-color: var(--wheat);
     color: var(--darkgreen);
 }
 
-.hotel-info-wrapper{
+.hotel-info-wrapper {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-top: 3.5rem;
@@ -130,32 +138,34 @@ body{
     align-items: center;
 }
 
-.hotel-info__titel{
+.hotel-info__titel {
     font-size: 1.6rem;
     text-align: center;
 }
 
-.hotel-info__decription{
+.hotel-info__decription {
     padding-top: 1rem;
     font-size: 1.1rem;
     font-weight: 600;
     text-align: center;
 }
 
-.booking-form{
+/*Styling för checking avail.*/
+.booking-form {
     margin-top: 4rem;
     margin-bottom: 4rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: 2rem;
-    grid-template-areas: 
-    ". date ."
-    ". room ."
-    ". people .";
+    grid-template-areas:
+        ". date ."
+        ". room ."
+        ". people ."
+        ". button .";
 }
 
-.booking-form__field{
+.booking-form__field {
     grid-area: date;
     display: flex;
     align-items: center;
@@ -165,58 +175,235 @@ body{
     border-width: 0 0 2px 0;
 }
 
-.booking-form__label{
+.booking-form__label {
     font-weight: 600;
     white-space: nowwrap;
 }
 
-.booking-form__input{
-    flex: 1;
-    max-width: 200px;
+.booking-form__date-input {
+    margin-left: auto;
     border: none;
 }
 
-.booking-form__field--room-quantity{
+.booking-form__selector {
+    flex: 1;
+    max-width: 200px;
+    border: none;
+    font-weight: 500;
+    text-align: center;
+}
+
+.booking-form__field--room-quantity {
     grid-area: room;
 }
 
-.booking-form__field--people-quantity{
+.booking-form__field--people-quantity {
     grid-area: people;
 }
 
-@media screen and (min-width: 992px){
+.button_availibilty--longer {
+    grid-area: button;
+    width: 220px;
+}
 
-    .header__nav-mobil{
+/*Styling för Info Card -right*/
+.info-card__wrapper--img-right {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "cabin"
+        "text";
+}
+
+.info-card__cabin-img {
+    grid-area: cabin;
+    width: 100%;
+    height: auto;
+}
+
+.hotel-under-info__wrapper {
+    grid-area: text;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+/*Styling för picture menu*/
+.picture-menu{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "resturant"
+    "hiking"
+    "spa";
+}
+
+.picture-menu__wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.picture-menu__img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+}
+
+.picture-menu__dark-box{
+    background: black;
+}
+
+.picture-menu__text{
+    position: absolute;
+    text-align: center;
+    color: var(--wheat);
+}
+
+.picture-menu__titel{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.picture-menu__decription{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.picture-menu__img--resturant{
+    grid-area: resturant;
+}
+
+.picture-menu__img--hiking{
+    grid-area: hiking;
+}
+
+.picture-menu__img--spa{
+    grid-area: spa;
+}
+
+/*Styling för citatet*/
+.citat{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.citat__text{
+    color: var(--darkgreen);
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.hotel-info__img{
+    width: 100%;
+    height: auto;
+}
+
+.info-card__wrapper--img-left{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "cabin"
+        "text";
+}
+
+.footer{
+    background-color: var(--darkgreen);
+    color: var(--wheat);
+}
+
+@media screen and (min-width: 992px) {
+
+    .header__nav-mobil {
         display: none;
     }
 
-    .header__nav{
+    .header__nav {
         display: block;
     }
 
-    .header__nav-menu{
+    .header__nav-menu {
         visibility: visible;
     }
 
-    .header__nav-hamburger{
+    .header__nav-hamburger {
         visibility: hidden;
     }
 
-    .header__video{
+    .header__video {
         height: auto;
     }
 
-    .header-inner__slogan{
+    .header-inner__slogan {
         font-size: 4rem;
     }
 
-    .hotel-info-wrapper{
+    .hotel-info-wrapper {
         padding-left: 20rem;
         padding-right: 20rem;
     }
 
-    .hotel-info__titel{
+
+    .hotel-info__titel {
         font-size: 1.9rem;
+    }
+
+    .booking-form {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        gap: 2rem;
+        grid-template-areas:
+            ". date room people button .";
+    }
+
+    .info-card__wrapper--img-right {
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "text text text cabin cabin cabin cabin cabin"
+        ;
+    }
+
+    .hotel-under-info__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .picture-menu{
+        margin-top: 6rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "resturant hiking bastu";
+    }
+
+    .picture-menu__img:hover{
+        opacity: 0.2;
+        transition: 0.5s;
+    }
+
+    .hotel-info__img{
+        height: 26em;
+    }
+
+    .info-card__wrapper--img-left {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "cabin cabin cabin cabin cabin text text text"
+        ;
     }
 
 }

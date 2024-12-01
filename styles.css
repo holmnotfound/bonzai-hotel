@@ -50,6 +50,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     visibility: hidden;
+    
 }
 
 .header__nav-item,
@@ -59,6 +60,10 @@ body {
     text-decoration: none;
     list-style: none;
     color: var(--wheat);
+}
+
+.header__nav-hamburger-link--green{
+    color: var(--darkgreen);
 }
 
 .header__nav-icon {
@@ -75,8 +80,8 @@ body {
     font-size: 2rem;
 }
 
-/*Stylingen för videon i headern*/
-.header__video {
+/*Stylingen för videon i headern samt bild*/
+.header__video, .header__background-img {
     position: absolute;
     top: 0;
     left: 0;
@@ -84,6 +89,7 @@ body {
     height: 100vh;
     object-fit: cover;
     z-index: -100;
+    
 }
 
 /*Styling för både texten och knappen i hero*/
@@ -227,11 +233,12 @@ body {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-top: 2rem;
-    padding-bottom: 4rem;
+    
 }
 
 /*Styling för picture menu*/
 .picture-menu{
+    margin-top: 3rem;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
@@ -315,9 +322,84 @@ body {
 }
 
 .footer{
+    margin-top: 6rem;
     background-color: var(--darkgreen);
     color: var(--wheat);
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "info"
+    "shortcuts"
+    "some";
 }
+
+.footer__shortcuts, .footer__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__info{
+    grid-area: info;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+}
+
+.footer__logo{
+    height: 4rem;
+}
+
+.footer__titel{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.footer__shortcuts{
+    grid-area: shortcuts;
+}
+
+.footer__link-list, .footer__link-list-link, .footer__mail{
+    list-style: none;
+    text-decoration: none;
+    color: var(--wheat);
+    cursor: pointer;
+    text-align: center;
+}
+
+.footer__link-list-item, .footer__info{
+    padding-top: 1rem;
+    font-weight: 500;
+}
+
+.footer__some{
+    grid-area: some;
+    display: flex;
+   justify-content: space-evenly;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.footer__some-link{
+    color: var(--wheat);
+    font-size: 2rem;
+    
+}
+
+/*Styling About Us*/
+.header-inner__slogan--green-page-two{
+    color: var(--darkgreen);
+}
+
+.hotel-info--invert{
+    background-color: var(--darkgreen);
+    color: var(--wheat);
+    margin-top: 7.5rem;
+    margin-bottom: 3rem;
+}
+
 
 @media screen and (min-width: 992px) {
 
@@ -404,6 +486,20 @@ body {
         grid-template-areas:
             "cabin cabin cabin cabin cabin text text text"
         ;
+    }
+
+    .footer{
+     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "info shortcuts some"
+    ;
+    }
+
+    .header__nav-link-green, .header__nav-item-green{
+        color: var(--darkgreen);
+        text-decoration: none;
+        list-style: none;
     }
 
 }

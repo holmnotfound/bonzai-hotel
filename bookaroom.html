@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Room</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/409e1a4887.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header__img-background header__img-background--book-a-room">
+        <nav class="header__nav">
+            <ul class="header__nav-menu">
+                <li class="header__nav-item"><a href="aboutus.html" class="header__nav-link">ABOUT US</a></li>
+                <li class="header__nav-item"><a href="bookaroom.html" class="header__nav-link">BOOK A ROOM</a>
+                <li class="header__nav-item"><a href="index.html" class="header__nav-link"><img class="header__nav-icon"
+                            src="/images/logowhite.png" alt="bonzai logo in white"></a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">GALLERY</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">EXPERIENCE</a></li>
+            </ul>
+        </nav>
+        <nav class="header__nav-mobil">
+            <ul class="header__nav-hamburger">
+                <li class="header__nav-hamburger-item"><a href="#" class="header__nav-hamburger-link"><img
+                            class="header__nav-hamburger-icon" src="/images/logowhite.png" alt="bonz.ai logo"></a></li>
+                <li class="header__nav-hamburger-item"><a href="#" class="header__nav-hamburger-link"><i
+                            class="fa-solid fa-bars" id="hamburgare"></i></a></li>
+            </ul>
+        </nav>
+        <section class="header-inner">
+            <h1 class="header-inner__slogan">The future hotel, where innovation embraces sustainability.</h1>
+            <button class="button button--book-a-room" type="button">BOOK A ROOM</button>
+        </section>
+    </header>
+    <main>
+        <section class="booking-form">
+            <section class="booking-form__field booking-form__field--date">
+                <label class="booking-form__label" for="booking-dates">Dates</label>
+                <input class="booking-form__date-input" type="date" id="booking-dates" name="dates" required>
+            </section>
+            <section class="booking-form__field booking-form__field--room-quantity">
+                <label class="booking-form__label" for="quantity">Rooms</label>
+                <select class="booking-form__selector" name="rooms" id="quantity" required>
+                    <option value="1 room">1 room</option>
+                    <option value="2 room">2 rooms</option>
+                    <option value="3 room">3 rooms</option>
+                    <option value="4 room">4 rooms</option>
+                    <option value="5 room">5 rooms</option>
+                    <option value="6 room">6 rooms</option>
+                    <option value="7 room">7 rooms</option>
+                </select>
+            </section>
+            <section class="booking-form__field booking-form__field--people-quantity">
+                <label class="booking-form__label" for="quantity-people">Adults</label>
+                <select class="booking-form__selector" name="Adults" id="quantity-people" required>
+                    <option value="1 adult">1 adult</option>
+                    <option value="2 adults">2 adults</option>
+                    <option value="3 adults">3 adults</option>
+                    <option value="4 adults">4 adults</option>
+                    <option value="5 adults">5 adults</option>
+                    <option value="6 adults">6 adults</option>
+                    <option value="7 adults">7 adults</option>
+                </select>
+            </section>
+            <button class="button button_availibilty--longer" type="button">CHECK AVAILIBILTY </button>
+        </section>
+        <section class="room">
+            <img class="room__img" src="/images/cabin1.jpg" alt="">
+            <article class="room__inner">
+                <section class="room__inner-text">
+                <h2 class="room__inner-titel">Singel Room</h2>
+                <p class="room__inner-sub-heading">Singel Room Facing The Lake</p>
+                <p class="room__inner-info">The Single Rooms, from 15 sqm (161 sqf), provide the perfect retreat for the solo traveller. This well-planned space boasts a work desk, an elegant armchair, an incredibly comfy double bed.</p>
+                <a class="room__inner-link" href="#">Room details</a>
+                </section>
+                <section class="room__inner-price">
+                    <p class="room__inner-price-text">SEK 998 / Per Night</p>
+                    <button class="button">BOOK NOW</button>
+                </section>
+            </article>
+        </section>
+        <section class="room">
+            <img class="room__img" src="/images/cabin2.jpg" alt="">
+            <article class="room__inner">
+                <section class="room__inner-text">
+                <h2 class="room__inner-titel">Dubbel Room</h2>
+                <p class="room__inner-sub-heading">Singel Room Facing The Lake</p>
+                <p class="room__inner-info">The Single Rooms, from 15 sqm (161 sqf), provide the perfect retreat for the solo traveller. This well-planned space boasts a work desk, an elegant armchair, an incredibly comfy double bed.</p>
+                <a class="room__inner-link" href="#">Room details</a>
+                </section>
+                <section class="room__inner-price">
+                    <p class="room__inner-price-text">SEK 1 998 / Per Night</p>
+                    <button class="button">BOOK NOW</button>
+                </section>
+            </article>
+        </section>
+        <section class="room">
+            <img class="room__img" src="/images/cabin4.jpg" alt="">
+            <article class="room__inner">
+                <section class="room__inner-text">
+                <h2 class="room__inner-titel">Superior Room</h2>
+                <p class="room__inner-sub-heading">Singel Room Facing The Lake</p>
+                <p class="room__inner-info">The Single Rooms, from 15 sqm (161 sqf), provide the perfect retreat for the solo traveller. This well-planned space boasts a work desk, an elegant armchair, an incredibly comfy double bed.</p>
+                <a class="room__inner-link" href="#">Room details</a>
+                </section>
+                <section class="room__inner-price">
+                    <p class="room__inner-price-text">SEK 2 998 / Per Night</p>
+                    <button class="button">BOOK NOW</button>
+                </section>
+            </article>
+        </section>
+        <section class="room">
+            <img class="room__img" src="/images/cabin1.jpg" alt="">
+            <article class="room__inner">
+                <section class="room__inner-text">
+                <h2 class="room__inner-titel">Lux Room</h2>
+                <p class="room__inner-sub-heading">Singel Room Facing The Lake</p>
+                <p class="room__inner-info">The Single Rooms, from 15 sqm (161 sqf), provide the perfect retreat for the solo traveller. This well-planned space boasts a work desk, an elegant armchair, an incredibly comfy double bed.</p>
+                <a class="room__inner-link" href="#">Room details</a>
+                </section>
+                <section class="room__inner-price">
+                    <p class="room__inner-price-text">SEK 4 998 / Per Night</p>
+                    <button class="button">BOOK NOW</button>
+                </section>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <section class="footer__info">
+            <img class="footer__logo" src="/images/logowhite.png" alt="">
+                <p class="footer__text">Norra Länken 43 <br> Sundsvall 5237 92</p>
+                <a class="footer__mail" href="#">bonzaihotel@hotel.com</a>
+                <p class="footer__text">+46 73 677 56 88</p>
+            </section>
+            <section class="footer__shortcuts">
+                <p class="footer__titel">Shortcuts</p>
+                <ul class="footer__link-list">
+                    <li class="footer__link-list-item"><a class="footer__link-list-link" href="#">Staying at Bonzai</a>
+                    </li>
+                    <li class="footer__link-list-item"><a class="footer__link-list-link" href="#">Event</a></li>
+                    <li class="footer__link-list-item"><a class="footer__link-list-link" href="#">About us</a></li>
+                    <li class="footer__link-list-item"><a class="footer__link-list-link" href="#">Rooms and Suites</a>
+                    </li>
+                    <li class="footer__link-list-item"><a class="footer__link-list-link" href="#">Weddings</a></li>
+                </ul>
+            </section>
+            <section class="footer__some">
+                <a class="footer__some-link" href="https://sv.wikipedia.org/wiki/Instagram" aria-label="icon for insta"><i class="fa-brands fa-instagram"></i></a>
+                <a class="footer__some-link" href="https://sv.wikipedia.org/wiki/Facebook" aria-label="icon for Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a class="footer__some-link" href="https://sv.wikipedia.org/wiki/Twitter"aria-label="icon for X"><i class="fa-brands fa-square-x-twitter"></i></a>
+            </section>
+        </section>
+    </footer>
+</body>
+</html>

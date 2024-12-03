@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://kit.fontawesome.com/409e1a4887.js" crossorigin="anonymous"></script>
-    <title>Bonzai.ai</title>
+    <title>Bonz.ai</title>
 </head>
 
 <body>
@@ -15,8 +15,8 @@
         <nav class="header__nav">
             <ul class="header__nav-menu">
                 <li class="header__nav-item"><a href="aboutus.html" class="header__nav-link">ABOUT US</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">BOOK A ROOM</a>
-                <li class="header__nav-item"><a href="#" class="header__nav-link"><img class="header__nav-icon"
+                <li class="header__nav-item"><a href="bookaroom.html" class="header__nav-link">BOOK A ROOM</a>
+                <li class="header__nav-item"><a href="index.html" class="header__nav-link"><img class="header__nav-icon"
                             src="/images/logowhite.png" alt="bonzai logo in white"></a></li>
                 <li class="header__nav-item"><a href="#" class="header__nav-link">GALLERY</a></li>
                 <li class="header__nav-item"><a href="#" class="header__nav-link">EXPERIENCE</a></li>
@@ -26,7 +26,7 @@
             <ul class="header__nav-hamburger">
                 <li class="header__nav-hamburger-item"><a href="#" class="header__nav-hamburger-link"><img
                             class="header__nav-hamburger-icon" src="/images/logowhite.png" alt="bonz.ai logo"></a></li>
-                <li class="header__nav-hamburger-item"><a href="#" class="header__nav-hamburger-link"><i
+                <li class="header__nav-hamburger-item header__nav-hamburger-item--click"><a href="#" class="header__nav-hamburger-link"><i
                             class="fa-solid fa-bars"></i></a></li>
             </ul>
         </nav>
@@ -35,7 +35,7 @@
         </video>
         <section class="header-inner">
             <h1 class="header-inner__slogan">The future hotel, where innovation embraces sustainability.</h1>
-            <button class="button button--book-a-room" type="button">BOOK A ROOM</button>
+            <button class="button button--book-a-room" type="button" onclick="location.href='bookaroom.html'">BOOK A ROOM</button>
         </section>
     </header>
     <main>
@@ -57,7 +57,7 @@
             </section>
             <section class="booking-form__field booking-form__field--room-quantity">
                 <label class="booking-form__label" for="quantity">Rooms</label>
-                <select class="booking-form__selector" name="rooms" id="rooms" required>
+                <select class="booking-form__selector" name="rooms" id="quantity" required>
                     <option value="1 room">1 room</option>
                     <option value="2 room">2 rooms</option>
                     <option value="3 room">3 rooms</option>
@@ -69,7 +69,7 @@
             </section>
             <section class="booking-form__field booking-form__field--people-quantity">
                 <label class="booking-form__label" for="quantity-people">Adults</label>
-                <select class="booking-form__selector" name="Adults" id="adults" required>
+                <select class="booking-form__selector" name="Adults" id="quantity-people" required>
                     <option value="1 adult">1 adult</option>
                     <option value="2 adults">2 adults</option>
                     <option value="3 adults">3 adults</option>
@@ -102,7 +102,7 @@
                         src="/images/resturant.jpg" alt=""></a>
                 <section class="picture-menu__text">
                     <h3 class="picture-menu__titel">Robozai</h3>
-                    <p class="picture-menu__decription">En resturang med det extra</p>
+                    <p class="picture-menu__decription">Food from our AI robot</p>
                 </section>
             </section>
             <section class="picture-menu__wrapper">
@@ -110,7 +110,7 @@
                         src="/images/hikinh.jpg" alt=""></a>
                 <section class="picture-menu__text">
                     <h3 class="picture-menu__titel">Experience</h3>
-                    <p class="picture-menu__decription">En resturang med det extra</p>
+                    <p class="picture-menu__decription">Hiking for the mind</p>
                 </section>
             </section>
             <section class="picture-menu__wrapper">
@@ -118,7 +118,7 @@
                         src="/images/bastu.jpg" alt=""></a>
                 <section class="picture-menu__text">
                     <h3 class="picture-menu__titel">AI Spa</h3>
-                    <p class="picture-menu__decription">En resturang med det extra</p>
+                    <p class="picture-menu__decription">AI Spa for the mind and body</p>
                 </section>
             </section>
         </section>
@@ -174,9 +174,9 @@
                 </ul>
             </section>
             <section class="footer__some">
-                <a class="footer__some-link" href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a class="footer__some-link" href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a class="footer__some-link" href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a class="footer__some-link" href="https://sv.wikipedia.org/wiki/Instagram" aria-label="icon for insta"><i class="fa-brands fa-instagram"></i></a>
+                <a class="footer__some-link" href="https://sv.wikipedia.org/wiki/Facebook" aria-label="icon for Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a class="footer__some-link" href="https://sv.wikipedia.org/wiki/Twitter"aria-label="icon for X"><i class="fa-brands fa-square-x-twitter"></i></a>
             </section>
         </section>
     </footer>

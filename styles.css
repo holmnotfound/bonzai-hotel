@@ -43,7 +43,8 @@ body {
     width: 100%;
     top: 121px;
     right: -100%;
-    display: flex;
+    transform: translateX(100%);
+    display: none;
     flex-direction: column;
     align-items: center;
     gap: 3rem;
@@ -73,7 +74,8 @@ body {
 }
 
 .hamburger-nav__menu.active{
-    right: 0;
+    display: flex;
+    right: 100%;
 }
 
 .header__nav {
@@ -118,6 +120,8 @@ body {
 .header__nav-hamburger-link{
     font-size: 2rem;
 }
+
+
 
 
 /*Stylingen för videon i headern samt bild*/

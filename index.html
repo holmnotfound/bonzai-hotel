@@ -13,7 +13,7 @@
 
 <body>
     <header class="header">
-      <nav class="header__nav">
+        <nav class="header__nav">
             <ul class="header__nav-menu">
                 <li class="header__nav-item"><a href="aboutus.html" class="header__nav-link">ABOUT US</a></li>
                 <li class="header__nav-item"><a href="bookaroom.html" class="header__nav-link">BOOK A ROOM</a>
@@ -25,31 +25,31 @@
 
             <section class="hamburger-nav">
                 <a href="index.html" class="header__nav-link"><img class="header__nav-icon header__nav-icon--mobil"
-                    src="/images/logowhite.png" alt="bonzai logo in white"></a>
-    
-                <section class="hamburger">
-                <span class="hamburger__bar"></span>
-                <span class="hamburger__bar"></span>
-                <span class="hamburger__bar"></span>
-            </section>
+                        src="/images/logowhite.png" alt="bonzai logo in white"></a>
 
-            <ul class="hamburger-nav__menu">
-                <li class="hamburger-nav__menu-item">
-                    <a href="index.html" class="hamburger-nav__menu-link">HOME</a>
-                </li>
-                <li class="hamburger-nav__menu-item">
-                    <a href="aboutus.html" class="hamburger-nav__menu-link">ABOUT US</a>
-                </li>
-                <li class="hamburger-nav__menu-item">
-                    <a href="bookaroom.html" class="hamburger-nav__menu-link">BOOK A ROOM</a>
-                </li>
-                <li class="hamburger-nav__menu-item">
-                    <a href="#" class="hamburger-nav__menu-link">GALLERY</a>
-                </li>
-                <li class="hamburger-nav__menu-item">
-                    <a href="#" class="hamburger-nav__menu-link">EXPERIENCE</a>
-                </li>
-            </ul>
+                <section class="hamburger">
+                    <span class="hamburger__bar"></span>
+                    <span class="hamburger__bar"></span>
+                    <span class="hamburger__bar"></span>
+                </section>
+                <ul class="hamburger-nav__menu">
+                    <li class="hamburger-nav__menu-item">
+                        <a href="index.html" class="hamburger-nav__menu-link">HOME</a>
+                    </li>
+                    <li class="hamburger-nav__menu-item">
+                        <a href="aboutus.html" class="hamburger-nav__menu-link">ABOUT US</a>
+                    </li>
+                    <li class="hamburger-nav__menu-item">
+                        <a href="bookaroom.html" class="hamburger-nav__menu-link">BOOK A ROOM</a>
+                    </li>
+                    <li class="hamburger-nav__menu-item">
+                        <a href="#" class="hamburger-nav__menu-link">GALLERY</a>
+                    </li>
+                    <li class="hamburger-nav__menu-item">
+                        <a href="#" class="hamburger-nav__menu-link">EXPERIENCE</a>
+                    </li>
+                </ul>
+    
             </section>
 
         </nav>
@@ -58,7 +58,8 @@
         </video>
         <section class="header-inner">
             <h1 class="header-inner__slogan">The future hotel, where innovation embraces sustainability.</h1>
-            <button class="button button--book-a-room" type="button" onclick="location.href='bookaroom.html'">BOOK A ROOM</button>
+            <button class="button button--book-a-room" type="button" onclick="location.href='bookaroom.html'">BOOK A
+                ROOM</button>
         </section>
     </header>
     <main>
@@ -73,14 +74,14 @@
                 </p>
             </article>
         </section>
-        <section class="booking-form">
+        <form class="booking-form" id="form">
             <section class="booking-form__field booking-form__field--date">
                 <label class="booking-form__label" for="booking-dates">Dates</label>
                 <input class="booking-form__date-input" type="date" id="booking-dates" name="dates" required>
             </section>
             <section class="booking-form__field booking-form__field--room-quantity">
-                <label class="booking-form__label" for="quantity">Rooms</label>
-                <select class="booking-form__selector" name="rooms" id="quantity" required>
+                <label class="booking-form__label" for="quantity-rooms">Rooms</label>
+                <select class="booking-form__selector" name="rooms" id="quantity-rooms" required>
                     <option value="1 room">1 room</option>
                     <option value="2 room">2 rooms</option>
                     <option value="3 room">3 rooms</option>
@@ -102,8 +103,8 @@
                     <option value="7 adults">7 adults</option>
                 </select>
             </section>
-            <button class="button button_availibilty--longer" type="button">CHECK AVAILIBILTY </button>
-        </section>
+            <button class="button button_availibilty--longer" type="submit" value="submit" form="form">CHECK AVAILIBILTY </button>
+        </form>
         <section class="info-card__wrapper info-card__wrapper--img-right">
             <img class="info-card__cabin-img" src="/images/cabin1.jpg" alt="showing the inside of the cabin at night">
             <article class="hotel-under-info__wrapper">
@@ -179,7 +180,7 @@
     <footer>
         <section class="footer">
             <section class="footer__info">
-            <img class="footer__logo" src="/images/logowhite.png" alt="">
+                <img class="footer__logo" src="/images/logowhite.png" alt="">
                 <p class="footer__text">Norra Länken 43 <br> Sundsvall 5237 92</p>
                 <a class="footer__mail" href="#">bonzaihotel@hotel.com</a>
                 <p class="footer__text">+46 73 677 56 88</p>
@@ -197,10 +198,15 @@
                 </ul>
             </section>
             <section class="footer__some">
-                <a class="footer__some-link" href="https://sv.wikipedia.org/wiki/Instagram" aria-label="icon for instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a class="footer__some-link" href="https://sv.wikipedia.org/wiki/Facebook" aria-label="icon for Facebook"><i class="fa-brands fa-facebook"></i></a>
-                <a class="footer__some-link" href="https://sv.wikipedia.org/wiki/Twitter"aria-label="icon for X"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a class="footer__some-link" href="https://sv.wikipedia.org/wiki/Instagram"
+                    aria-label="icon for instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a class="footer__some-link" href="https://sv.wikipedia.org/wiki/Facebook"
+                    aria-label="icon for Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a class="footer__some-link" href="https://sv.wikipedia.org/wiki/Twitter" aria-label="icon for X"><i
+                        class="fa-brands fa-square-x-twitter"></i></a>
             </section>
         </section>
     </footer>
-</body> </html>
+</body>
+
+</html>
